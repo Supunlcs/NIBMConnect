@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D16C97122924E2A00CAE621 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D16C97022924E2A00CAE621 /* GoogleService-Info.plist */; };
 		4D63F11F229148AC00461C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F11E229148AC00461C99 /* AppDelegate.swift */; };
 		4D63F124229148AC00461C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63F122229148AC00461C99 /* Main.storyboard */; };
 		4D63F126229148AD00461C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D63F125229148AD00461C99 /* Assets.xcassets */; };
 		4D63F129229148AD00461C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63F127229148AD00461C99 /* LaunchScreen.storyboard */; };
 		4D63F13922914A3900461C99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F13822914A3900461C99 /* HomeViewController.swift */; };
+		4D96616A22926245006F57B1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D96616922926245006F57B1 /* Home.storyboard */; };
+		4D96616C22926263006F57B1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D96616B22926263006F57B1 /* Login.storyboard */; };
+		4D96616F229265D0006F57B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96616E229265D0006F57B1 /* LoginViewController.swift */; };
+		4D966175229267F9006F57B1 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D966174229267F9006F57B1 /* ForgetPasswordViewController.swift */; };
+		4D96617722926868006F57B1 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D96617622926868006F57B1 /* Student.storyboard */; };
+		4D9661792292688B006F57B1 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9661782292688B006F57B1 /* MyProfile.storyboard */; };
+		4D96617B229268A2006F57B1 /* HomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D96617A229268A2006F57B1 /* HomeWork.storyboard */; };
+		4D96617D229268E8006F57B1 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96617C229268E8006F57B1 /* StudentViewController.swift */; };
+		4D96617F2292691D006F57B1 /* HomeWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96617E2292691D006F57B1 /* HomeWorkViewController.swift */; };
+		4D96618122926937006F57B1 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96618022926937006F57B1 /* MyProfileViewController.swift */; };
+		A3D36DF1AFBF18324D4EE235 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F5BDB53A865E7B5429404E /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E384CFCC9AFED87A980C4F4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
+		4D16C97022924E2A00CAE621 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D63F11B229148AC00461C99 /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D63F11E229148AC00461C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D63F123229148AC00461C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +36,18 @@
 		4D63F128229148AD00461C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D63F12A229148AD00461C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D63F13822914A3900461C99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4D96616922926245006F57B1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4D96616B22926263006F57B1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4D96616E229265D0006F57B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D966174229267F9006F57B1 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		4D96617622926868006F57B1 /* Student.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
+		4D9661782292688B006F57B1 /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		4D96617A229268A2006F57B1 /* HomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeWork.storyboard; sourceTree = "<group>"; };
+		4D96617C229268E8006F57B1 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		4D96617E2292691D006F57B1 /* HomeWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkViewController.swift; sourceTree = "<group>"; };
+		4D96618022926937006F57B1 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		72F5BDB53A865E7B5429404E /* Pods_NIBMConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D672EBAF523CDA28E81C5E /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D36DF1AFBF18324D4EE235 /* Pods_NIBMConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D16C96E22924A0A00CAE621 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				4D16C96F22924A1900CAE621 /* nibm */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		4D16C96F22924A1900CAE621 /* nibm */ = {
+			isa = PBXGroup;
+			children = (
+				4D63F136229149C000461C99 /* StoryBoards */,
+				4D63F135229149A400461C99 /* Controllers */,
+				4D63F1342291499500461C99 /* Models */,
+				4D63F1332291498400461C99 /* Views */,
+			);
+			path = nibm;
+			sourceTree = "<group>";
+		};
 		4D63F112229148AC00461C99 = {
 			isa = PBXGroup;
 			children = (
 				4D63F11D229148AC00461C99 /* NIBMConnect */,
 				4D63F11C229148AC00461C99 /* Products */,
+				AA62E7702806431009CE0221 /* Pods */,
+				4F3A9A0FB49ABD83B14F0203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,46 +102,54 @@
 		4D63F11D229148AC00461C99 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
-				4D63F136229149C000461C99 /* StoryBoard */,
-				4D63F135229149A400461C99 /* Controller */,
-				4D63F1342291499500461C99 /* Model */,
-				4D63F1332291498400461C99 /* View */,
-				4D63F11E229148AC00461C99 /* AppDelegate.swift */,
 				4D63F125229148AD00461C99 /* Assets.xcassets */,
+				4D63F11E229148AC00461C99 /* AppDelegate.swift */,
 				4D63F12A229148AD00461C99 /* Info.plist */,
+				4D16C97022924E2A00CAE621 /* GoogleService-Info.plist */,
+				4D16C96E22924A0A00CAE621 /* com */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
 		};
-		4D63F1332291498400461C99 /* View */ = {
+		4D63F1332291498400461C99 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		4D63F1342291499500461C99 /* Model */ = {
+		4D63F1342291499500461C99 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		4D63F135229149A400461C99 /* Controller */ = {
+		4D63F135229149A400461C99 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D966173229266A5006F57B1 /* MyProfile */,
+				4D96617222926669006F57B1 /* HomeWork */,
+				4D96617122926626006F57B1 /* forgetPassword */,
+				4D96617022926615006F57B1 /* Student */,
+				4D96616D229262A6006F57B1 /* Login */,
 				4D63F137229149F200461C99 /* Home */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4D63F136229149C000461C99 /* StoryBoard */ = {
+		4D63F136229149C000461C99 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
 				4D63F127229148AD00461C99 /* LaunchScreen.storyboard */,
 				4D63F122229148AC00461C99 /* Main.storyboard */,
+				4D96616922926245006F57B1 /* Home.storyboard */,
+				4D96616B22926263006F57B1 /* Login.storyboard */,
+				4D96617622926868006F57B1 /* Student.storyboard */,
+				4D9661782292688B006F57B1 /* MyProfile.storyboard */,
+				4D96617A229268A2006F57B1 /* HomeWork.storyboard */,
 			);
-			path = StoryBoard;
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		4D63F137229149F200461C99 /* Home */ = {
@@ -104,6 +160,63 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		4D96616D229262A6006F57B1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D96616E229265D0006F57B1 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4D96617022926615006F57B1 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				4D96617C229268E8006F57B1 /* StudentViewController.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		4D96617122926626006F57B1 /* forgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				4D966174229267F9006F57B1 /* ForgetPasswordViewController.swift */,
+			);
+			path = forgetPassword;
+			sourceTree = "<group>";
+		};
+		4D96617222926669006F57B1 /* HomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				4D96617E2292691D006F57B1 /* HomeWorkViewController.swift */,
+			);
+			path = HomeWork;
+			sourceTree = "<group>";
+		};
+		4D966173229266A5006F57B1 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4D96618022926937006F57B1 /* MyProfileViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		4F3A9A0FB49ABD83B14F0203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72F5BDB53A865E7B5429404E /* Pods_NIBMConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA62E7702806431009CE0221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0D672EBAF523CDA28E81C5E /* Pods-NIBMConnect.debug.xcconfig */,
+				2E384CFCC9AFED87A980C4F4 /* Pods-NIBMConnect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D63F12D229148AD00461C99 /* Build configuration list for PBXNativeTarget "NIBMConnect" */;
 			buildPhases = (
+				ED699D56EF7CF46594BF5C2A /* [CP] Check Pods Manifest.lock */,
 				4D63F117229148AC00461C99 /* Sources */,
 				4D63F118229148AC00461C99 /* Frameworks */,
 				4D63F119229148AC00461C99 /* Resources */,
+				9BBCA5AB400B385640DF0586 /* [CP] Embed Pods Frameworks */,
+				E6C50DAEC16A7C3563BDE77B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,19 +279,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D63F129229148AD00461C99 /* LaunchScreen.storyboard in Resources */,
+				4D96616A22926245006F57B1 /* Home.storyboard in Resources */,
+				4D9661792292688B006F57B1 /* MyProfile.storyboard in Resources */,
+				4D96617722926868006F57B1 /* Student.storyboard in Resources */,
+				4D96616C22926263006F57B1 /* Login.storyboard in Resources */,
+				4D16C97122924E2A00CAE621 /* GoogleService-Info.plist in Resources */,
 				4D63F126229148AD00461C99 /* Assets.xcassets in Resources */,
 				4D63F124229148AC00461C99 /* Main.storyboard in Resources */,
+				4D96617B229268A2006F57B1 /* HomeWork.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BBCA5AB400B385640DF0586 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C50DAEC16A7C3563BDE77B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED699D56EF7CF46594BF5C2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NIBMConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D63F117229148AC00461C99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D96617D229268E8006F57B1 /* StudentViewController.swift in Sources */,
+				4D96616F229265D0006F57B1 /* LoginViewController.swift in Sources */,
+				4D96618122926937006F57B1 /* MyProfileViewController.swift in Sources */,
+				4D96617F2292691D006F57B1 /* HomeWorkViewController.swift in Sources */,
 				4D63F11F229148AC00461C99 /* AppDelegate.swift in Sources */,
+				4D966175229267F9006F57B1 /* ForgetPasswordViewController.swift in Sources */,
 				4D63F13922914A3900461C99 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +522,7 @@
 		};
 		4D63F12E229148AD00461C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D672EBAF523CDA28E81C5E /* Pods-NIBMConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +541,7 @@
 		};
 		4D63F12F229148AD00461C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E384CFCC9AFED87A980C4F4 /* Pods-NIBMConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
