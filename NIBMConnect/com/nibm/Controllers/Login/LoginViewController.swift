@@ -17,8 +17,13 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var btnSignIn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.btnSignIn.backgroundColor = UIColor.red
+        self.btnSignIn.layer.cornerRadius = 15;
+        
         // Do any additional setup after loading the view.
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
