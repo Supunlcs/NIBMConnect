@@ -111,6 +111,9 @@
                                     <constraint firstAttribute="height" constant="30" id="737-uq-dHN"/>
                                 </constraints>
                                 <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="JcT-pf-xex" eventType="touchUpInside" id="VPG-7M-UlA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VlE-TD-NmU">
                                 <rect key="frame" x="20" y="244" width="374" height="30"/>

@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         GIDSignIn.sharedInstance().delegate = self
         }
     
+    
     @IBAction func singnInfun(_ sender: Any) {
         Auth.auth().signIn(withEmail: self.userName.text!, password: self.password.text!) { [weak self] user, error in
             guard let strongSelf = self else { return }

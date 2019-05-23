@@ -17,27 +17,70 @@
                     <view key="view" contentMode="scaleToFill" id="Mcn-Ru-htW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bX-ei-T5u">
+                                <rect key="frame" x="120" y="268" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4EL-fH-mfu"/>
+                                </constraints>
+                                <state key="normal" title="My Profile"/>
+                                <connections>
+                                    <action selector="goToProfile:" destination="Dcb-ui-sVX" eventType="touchUpInside" id="5tU-a7-1b8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euy-q5-oJX">
+                                <rect key="frame" x="120" y="328" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bgS-Ep-l59"/>
+                                </constraints>
+                                <state key="normal" title="Friends"/>
+                                <connections>
+                                    <action selector="friendView:" destination="Dcb-ui-sVX" eventType="touchUpInside" id="Rni-b0-zZY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7G-co-PW5">
+                                <rect key="frame" x="120" y="388" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bC0-6d-Sx4"/>
+                                </constraints>
+                                <state key="normal" title="HomeWork"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3bX-ei-T5u" firstAttribute="centerX" secondItem="Mcn-Ru-htW" secondAttribute="centerX" id="1Bg-7l-uaR"/>
+                            <constraint firstItem="euy-q5-oJX" firstAttribute="centerX" secondItem="Mcn-Ru-htW" secondAttribute="centerX" id="FTH-SA-NtD"/>
+                            <constraint firstItem="R7G-co-PW5" firstAttribute="centerX" secondItem="Mcn-Ru-htW" secondAttribute="centerX" id="NS4-dq-Zkj"/>
+                            <constraint firstItem="Hc6-fJ-UlG" firstAttribute="trailing" secondItem="R7G-co-PW5" secondAttribute="trailing" constant="120" id="USb-Zc-DUX"/>
+                            <constraint firstItem="Hc6-fJ-UlG" firstAttribute="trailing" secondItem="3bX-ei-T5u" secondAttribute="trailing" constant="120" id="Yvh-B7-KDM"/>
+                            <constraint firstItem="euy-q5-oJX" firstAttribute="top" secondItem="3bX-ei-T5u" secondAttribute="bottom" constant="30" id="eah-ZA-Gxe"/>
+                            <constraint firstItem="R7G-co-PW5" firstAttribute="leading" secondItem="Hc6-fJ-UlG" secondAttribute="leading" constant="120" id="enE-kp-Tmj"/>
+                            <constraint firstItem="euy-q5-oJX" firstAttribute="leading" secondItem="Hc6-fJ-UlG" secondAttribute="leading" constant="120" id="gk5-YI-y5C"/>
+                            <constraint firstItem="R7G-co-PW5" firstAttribute="top" secondItem="euy-q5-oJX" secondAttribute="bottom" constant="30" id="hcr-MH-Poh"/>
+                            <constraint firstItem="3bX-ei-T5u" firstAttribute="leading" secondItem="Hc6-fJ-UlG" secondAttribute="leading" constant="120" id="iFq-au-MOI"/>
+                            <constraint firstItem="3bX-ei-T5u" firstAttribute="top" secondItem="Hc6-fJ-UlG" secondAttribute="top" constant="180" id="mBY-OO-fAX"/>
+                            <constraint firstItem="Hc6-fJ-UlG" firstAttribute="trailing" secondItem="euy-q5-oJX" secondAttribute="trailing" constant="120" id="nUx-r9-hrt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hc6-fJ-UlG"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gfp-ZX-ote"/>
                     <connections>
-                        <segue destination="uyU-8o-GgR" kind="show" identifier="showStudent" id="s4X-Tx-P1Q"/>
-                        <segue destination="8lT-uj-bQk" kind="show" identifier="showMyProfile" id="8lE-e6-QgW"/>
-                        <segue destination="bmu-Uu-n73" kind="show" identifier="showHomeWork" id="IOn-VV-y1v"/>
+                        <segue destination="8lT-uj-bQk" kind="show" identifier="showMyProfile" id="9SH-nB-51W"/>
+                        <segue destination="bmu-Uu-n73" kind="show" identifier="showHomeWork" id="Lvm-Ci-nBp"/>
+                        <segue destination="VIG-Sj-bMR" kind="show" identifier="showFriends" id="8vr-Vp-Ocp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4n-RW-8y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="-86.383928571428569"/>
         </scene>
-        <!--Student-->
-        <scene sceneID="hNo-d4-JGX">
+        <!--Friends-->
+        <scene sceneID="IpQ-2p-qL5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Student" id="uyU-8o-GgR" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7P7-0G-Lha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Friends" id="VIG-Sj-bMR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTL-QV-i2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="-358"/>
+            <point key="canvasLocation" x="1694" y="-307"/>
         </scene>
         <!--MyProfile-->
         <scene sceneID="oy6-So-ref">
