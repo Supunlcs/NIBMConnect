@@ -15,20 +15,23 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        AppTempData.userHandle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user == nil {
-                self.performSegue(withIdentifier: "showLogin", sender: nil)
-            } else {
-                //                self.performSegue(withIdentifier: "showHome", sender: nil)
-                self.performSegue(withIdentifier: "showLogin", sender: nil)
+           
             }
-        }
-    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         AppTempData.userHandle = Auth.auth().addStateDidChangeListener { (auth, user) in
             // ...
-            
+            if user == nil {
+                self.performSegue(withIdentifier: "showHome", sender: self)
+            } else {
+                //                self.performSegue(withIdentifier: "showHome", sender: nil)
+                self.performSegue(withIdentifier: "showLogin", sender: self)
         }
+    }
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        Auth.auth().removeStateDidChangeListener(AppTempData.userHandle!)
     }
 }

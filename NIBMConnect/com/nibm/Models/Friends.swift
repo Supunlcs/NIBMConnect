@@ -12,23 +12,23 @@ import Foundation
 class Friends {
     
     var id:String
-    var firstName:String
-    var lastName:String
-    var fbLink:String
-    var phoneNum:String
-    var birthDay:String
-    var pf:String
-    var city:String
+    var Fname:String
+    var Lname:String
+    var FBLink:String
+    var PNumber:String
+    var Birth:String
+    var PFPic:String
+    var City:String
     
     init(id:String, fName:String, lName:String, fBLink:String, ph:String, bir:String, pf:String, city:String) {
         
         self.id  = id
-        self.firstName = fName
-        self.lastName = lName
-        self.fbLink = fBLink
-        self.phoneNum = ph
-        self.birthDay = bir
-        self.pf = pf
-        self.city = city
+        self.Fname = fName
+        self.Lname = lName
+        self.FBLink = fBLink
+        self.PNumber = ph
+        self.Birth = bir
+        self.PFPic = pf
+        self.City = city
     }
 }

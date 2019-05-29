@@ -19,25 +19,26 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func goToProfile(_ sender: Any) {
-        let myContext = LAContext()
-        let myLocalizedReasonString = "NiBM Connect"
+        let myContext:LAContext = LAContext()
+        let myLocalizedReasonString = "NIBM Connect"
         
         var authError: NSError?
         if #available(iOS 8.0, macOS 10.12.1, *) {
-            if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
-                myContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: myLocalizedReasonString) { success, evaluateError in
+            if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+                myContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason:myLocalizedReasonString) { success, evaluateError in
                     
-                    DispatchQueue.main.async {
+                    
                         if success {
                             // User authenticated successfully, take appropriate action
-                            self.performSegue(withIdentifier: "showMyProfile", sender: self)
+                            print("connect")
+                            DispatchQueue.main.async {self.performSegue(withIdentifier: "showProfile", sender: self)}
                             
                         } else {
-                            
-                            let err = evaluateError?.localizedDescription
-                            print(err)
+                            print("incorrect")
+                            let error = evaluateError?.localizedDescription
+                            print(error as Any)
                         }
-                    }
+                    
                 }
             } else {
                 print("Sorry!!.. Could not evaluate policy.")
@@ -45,12 +46,20 @@ class HomeViewController: UIViewController {
         } else {
             print("Sorry!!.. Could not evaluate policy.")
         }
+        
+        
     }
     
     @IBAction func friendView(_ sender: Any) {
         
          self.performSegue(withIdentifier: "showFriends", sender: self)
     }
+    
+    @IBAction func homeWork(_ sender: Any) {
+        self.performSegue(withIdentifier: "showHwork", sender: self)
+        
+    }
+    
     
     
 

@@ -1,14 +1,14 @@
 //
-//  StudentViewController.swift
+//  HWViewController.swift
 //  NIBMConnect
 //
-//  Created by Supun Chathuranga on 5/20/19.
+//  Created by Supun Chathuranga on 5/28/19.
 //  Copyright © 2019 Supun Lakmal. All rights reserved.
 //
 
 import UIKit
 
-class StudentViewController: UIViewController {
+class HWViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
