@@ -8,12 +8,14 @@
 
 import UIKit
 import LocalAuthentication
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         // Do any additional setup after loading the view.
     }
     
@@ -24,21 +26,20 @@ class HomeViewController: UIViewController {
         
         var authError: NSError?
         if #available(iOS 8.0, macOS 10.12.1, *) {
-            if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-                myContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason:myLocalizedReasonString) { success, evaluateError in
+            if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
+                myContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: myLocalizedReasonString) { success, evaluateError in
                     
-                    
+                    DispatchQueue.main.async {
                         if success {
                             // User authenticated successfully, take appropriate action
-                            print("connect")
-                            DispatchQueue.main.async {self.performSegue(withIdentifier: "showProfile", sender: self)}
+                            self.performSegue(withIdentifier: "showProfile", sender: self)
                             
                         } else {
-                            print("incorrect")
+                            
                             let error = evaluateError?.localizedDescription
-                            print(error as Any)
+                            print(error)
                         }
-                    
+                    }
                 }
             } else {
                 print("Sorry!!.. Could not evaluate policy.")
@@ -48,7 +49,19 @@ class HomeViewController: UIViewController {
         }
         
         
+        
     }
+    
+    @IBAction func signOut(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        self.performSegue(withIdentifier: "goLogin", sender: nil)
+    }
+    
     
     @IBAction func friendView(_ sender: Any) {
         
@@ -64,8 +77,7 @@ class HomeViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
-
+  
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

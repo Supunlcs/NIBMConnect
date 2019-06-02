@@ -20,9 +20,10 @@ class FriendsViewController: UIViewController,UITableViewDataSource,UITableViewD
     var passFriend:Friends? = nil
     
     @IBOutlet weak var friendsViewTable: UITableView!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         
         self.friendsViewTable.delegate = self
         self.friendsViewTable.dataSource = self
@@ -45,6 +46,9 @@ class FriendsViewController: UIViewController,UITableViewDataSource,UITableViewD
             }
             self.friendList = friends
             self.friendsViewTable.reloadData()
+            
+            
+            
         }
         
         
@@ -54,6 +58,10 @@ class FriendsViewController: UIViewController,UITableViewDataSource,UITableViewD
     }
     
     
+    @IBAction func back(_ sender: Any) {
+        let loginVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        self.navigationController?.pushViewController(loginVC, animated: true)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friendList.count
     }

@@ -27,7 +27,12 @@ class StudentDViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
+        proImg.layer.borderWidth=1.0
+        proImg.layer.masksToBounds = false
+        proImg.layer.borderColor = UIColor.white.cgColor
+        proImg.layer.cornerRadius = proImg.frame.size.width/2
+        proImg.clipsToBounds = true
         // Do any additional setup after loading the view.
         //print(passFriend?.firstName)
         

@@ -20,6 +20,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         
         self.btnSignIn.backgroundColor = UIColor.red
         self.btnSignIn.layer.cornerRadius = 15;

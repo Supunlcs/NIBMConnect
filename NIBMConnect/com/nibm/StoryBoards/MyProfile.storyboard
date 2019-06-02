@@ -107,6 +107,9 @@
                         <viewLayoutGuide key="safeArea" id="BGO-55-I2U"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="3ju-xV-Nbn"/>
+                    <connections>
+                        <outlet property="myProPic" destination="UJ8-19-Xvr" id="nU9-XA-sbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CbV-K4-Rjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

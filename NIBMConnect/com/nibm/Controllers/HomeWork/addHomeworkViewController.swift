@@ -1,27 +1,27 @@
 //
-//  MyProfileViewController.swift
+//  addHomeworkViewController.swift
 //  NIBMConnect
 //
-//  Created by Supun Chathuranga on 5/20/19.
+//  Created by Supun Chathuranga on 6/2/19.
 //  Copyright © 2019 Supun Lakmal. All rights reserved.
 //
 
 import UIKit
-import LocalAuthentication
 
-class MyProfileViewController: UIViewController {
+class addHomeworkViewController: UIViewController {
 
-    @IBOutlet weak var myProPic: UIImageView!
+    @IBOutlet weak var addHomeworktxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func addHomeWork(_ sender: Any) {
+        let newHomeWork = HomeWork(addtitle:addHomeworktxt.text!)
+        HomeWork.saveHomeWork(homeWork: newHomeWork)
         
-        myProPic.layer.borderWidth=1.0
-        myProPic.layer.masksToBounds = false
-        myProPic.layer.borderColor = UIColor.white.cgColor
-        myProPic.layer.cornerRadius = myProPic.frame.size.height/2
-        myProPic.clipsToBounds = true
+        
     }
     
     /*

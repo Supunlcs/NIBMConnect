@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HOME-->
+        <!--Home View Controller-->
         <scene sceneID="Rk1-xZ-QZa">
             <objects>
                 <viewController id="Dcb-ui-sVX" customClass="HomeViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,10 +24,7 @@
                                     <constraint firstAttribute="width" constant="150" id="RU8-kk-deK"/>
                                     <constraint firstAttribute="height" constant="150" id="adP-2D-d1p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <state key="normal" title="My Profile" image="user">
-                                    <color key="titleColor" red="0.087778468469999996" green="0.33290206109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
+                                <state key="normal" title="My Profile" image="user"/>
                                 <connections>
                                     <action selector="goToProfile:" destination="Dcb-ui-sVX" eventType="touchUpInside" id="5tU-a7-1b8"/>
                                 </connections>
@@ -67,16 +64,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hc6-fJ-UlG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="Gfp-ZX-ote"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="Gfp-ZX-ote">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="DId-mI-zhF"/>
+                        <barButtonItem key="rightBarButtonItem" title="SignOut" id="4uw-a8-Zgw">
+                            <connections>
+                                <action selector="signOut:" destination="Dcb-ui-sVX" id="MEY-oo-mt4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="8lT-uj-bQk" kind="show" identifier="showProfile" id="9SH-nB-51W"/>
                         <segue destination="VIG-Sj-bMR" kind="show" identifier="showFriends" id="8vr-Vp-Ocp"/>
                         <segue destination="Yk4-sS-CMF" kind="show" identifier="showHwork" id="QmL-FI-swf"/>
+                        <segue destination="8e7-BR-fMI" kind="presentation" identifier="goLogin" id="2j4-jD-cS1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4n-RW-8y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="-86.383928571428569"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Bbn-vx-DHb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="8e7-BR-fMI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtG-fw-idb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="-397"/>
         </scene>
         <!--Friends-->
         <scene sceneID="IpQ-2p-qL5">
