@@ -95,6 +95,7 @@ class HworkViewController: UIViewController, UITableViewDataSource, UITableViewD
             homeWorkArray.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
             self.tableView.reloadData()
+            HomeWork.getHomeWork()
         }
     }
 

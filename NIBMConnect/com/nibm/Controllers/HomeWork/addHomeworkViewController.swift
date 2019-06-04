@@ -20,6 +20,7 @@ class addHomeworkViewController: UIViewController {
     @IBAction func addHomeWork(_ sender: Any) {
         let newHomeWork = HomeWork(addtitle:addHomeworktxt.text!)
         HomeWork.saveHomeWork(homeWork: newHomeWork)
+        //HworkViewController.self
         
         
     }
