@@ -175,6 +175,7 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="VlE-TD-NmU" id="pn1-xN-04G"/>
+                        <outlet property="forgetpass" destination="Odp-D7-UxU" id="g7P-BY-YVh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fa-Me-UNX" userLabel="First Responder" sceneMemberID="firstResponder"/>

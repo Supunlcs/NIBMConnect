@@ -14,10 +14,13 @@ import Firebase
 class ForgetPasswordViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var forgetpass: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         // Do any additional setup after loading the view.
+        self.forgetpass.backgroundColor = UIColor.black
+        self.forgetpass.layer.cornerRadius = 15;
     }
     
 
