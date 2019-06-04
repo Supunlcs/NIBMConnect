@@ -122,6 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="Bkx-CA-aAd"/>
                     </view>
                     <connections>
+                        <outlet property="addHomework" destination="L1i-Yw-zhL" id="CoR-0p-D73"/>
                         <outlet property="addHomeworktxt" destination="4aW-BS-SSR" id="YOg-x7-eYK"/>
                     </connections>
                 </viewController>

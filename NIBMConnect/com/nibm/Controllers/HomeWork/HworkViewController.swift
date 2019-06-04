@@ -65,6 +65,7 @@ class HworkViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.reloadData()
     }
     
+   
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -90,12 +91,14 @@ class HworkViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             homeWorkArray.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-            self.tableView.reloadData()
-            HomeWork.getHomeWork()
+           // self.tableView.reloadData()
+          //  HomeWork.getHomeWork()
+            HomeWork.reSave(homeWorks:homeWorkArray)
         }
     }
 

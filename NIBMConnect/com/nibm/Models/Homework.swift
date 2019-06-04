@@ -29,6 +29,11 @@ class HomeWork: Codable {
         return homeWorkArray
     }
     
+    public static func reSave(homeWorks:[HomeWork]){
+        let homeWorkDat = try! JSONEncoder().encode(homeWorks)
+        UserDefaults.standard.set(homeWorkDat, forKey: "homeworkData")
+    }
+    
     
     public static func saveHomeWork(homeWork:HomeWork){
         var retrivedHomeWorkArray:[HomeWork] = []

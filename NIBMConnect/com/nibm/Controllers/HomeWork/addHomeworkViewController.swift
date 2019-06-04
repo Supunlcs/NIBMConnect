@@ -11,8 +11,11 @@ import UIKit
 class addHomeworkViewController: UIViewController {
 
     @IBOutlet weak var addHomeworktxt: UITextField!
+    @IBOutlet weak var addHomework: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addHomework.backgroundColor = UIColor.black
+        self.addHomework.layer.cornerRadius = 15;
         view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         // Do any additional setup after loading the view.
     }
